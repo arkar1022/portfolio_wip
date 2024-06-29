@@ -1,0 +1,9 @@
+.swiper-pagination {
+    /* Modify pagination styles here */
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #fff !important; /* Change bullet color */
+
+  }
+  
