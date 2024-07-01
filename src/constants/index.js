@@ -31,7 +31,18 @@ import {
   Cert3,
   Cert4,
   Cert5,
-  MyanService
+  firebase,
+  django,
+  chakra,
+  restapi,
+  mysql,
+  nginx,
+  android, 
+  vultr,
+  MyanService,
+  ace,
+  Portfolio,
+  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -196,20 +207,7 @@ const projects = [
     name: "ConnectJCU (Frontend)",
     description:
       "A dynamic community platform designed for JCU students, allowing them to write blogs, post comments, download resources, and ask questions. The frontend is crafted with modern web technologies to provide an intuitive and seamless user experience.",
-    tags: [
-      {
-        name: "Nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Chakraui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "SSR",
-        color: "pink-text-gradient",
-      },
-    ],
+    icons: [nextjs, css, javascript, docker, chakra],
     image: connectJCU,
     source_code_link: "https://github.com/arkar1022/connectjcu-client",
   },
@@ -217,20 +215,7 @@ const projects = [
     name: "ConnectJCU (Backend)",
     description:
       "Backend API of ConnectJCU implemented with Django Rest Framework, utilizing AuthToken for secure token-based authentication. Containerized with Docker and served with Nginx for efficient traffic management and enhanced performance.",
-    tags: [
-      {
-        name: "Django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Docker",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "pink-text-gradient",
-      },
-    ],
+    icons: [python, docker, django, nginx, restapi, mysql, vultr],
     image: connectJCUBackend,
     source_code_link: "https://github.com/arkar1022/connectjcu-server",
   },
@@ -238,20 +223,7 @@ const projects = [
     name: "Brain Sharp",
     description:
       "Brain Sharp is a quiz app developed with Java, enabling users to answer quizzes and compete for the highest scores on the leaderboard. Users can review their quizzes, edit their profiles, and access their data from any device via their accounts.",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "FireAuth",
-        color: "green-text-gradient",
-      },
-      {
-        name: "FireStore",
-        color: "pink-text-gradient",
-      },
-    ],
+    icons: [java,firebase, android],
     image: Brainsharp,
     source_code_link: "https://github.com/arkar1022/BrainSharp-Quiz-APP",
   },
@@ -259,81 +231,35 @@ const projects = [
     name: "MemoPad",
     description:
       "MemoPad is a note-taking app developed with Java, allowing users to create and edit their notes, accessible from any device by logging into their account. The app leverages Firebase Authentication for secure login and Firestore for storage",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "FireAuth",
-        color: "green-text-gradient",
-      },
-      {
-        name: "FireStore",
-        color: "pink-text-gradient",
-      },
-    ],
+    icons: [java,firebase, android],
     image: NoteApp,
     source_code_link: "https://github.com/arkar1022/MemoPad-Note-APP",
   },
   {
-    name: "Employee Mangement",
-    description:
-      "Console Employee Management System, developed using C++, allows users to log in as either an employee or a manager. Loading and releasing employee data from files, searching for employees, and managing employee can be done.",
-    tags: [
-      {
-        name: "C++",
-        color: "blue-text-gradient",
-      },
-    ],
+    name: "Employee Management",
+    description: "Console Employee Management System, developed using C++, allows users to log in as either an employee or a manager. Loading and releasing employee data from files, searching for employees, and managing employee can be done.",
+    icons: [Cplus],
     image: Employee,
     source_code_link: "https://github.com/arkar1022/employee-management-system",
   },
   {
     name: "Sentor HUB (Figma)",
     description:"As part of the Design Thinking 1 course at JCU, Sentor HUB was conceptualized and designed in Figma. It aims to streamline user interactions through intuitive UI/UX principles, focusing on ease of navigation and visual appeal.",
-    tags: [
-      {
-        name: "Figma",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "UI/UX",
-        color: "green-text-gradient",
-      },
-    ],
+    icons: [figma],
     image: Sentorhub,
     source_code_link: "https://www.figma.com/design/e40fEqPWhGlxfA43XmUADU/Mentorship---Design-Thinking?node-id=0-1&t=ouxijA3kVRdMDTYX-1",
   },
   {
     name: "OneService (Figma)",
     description:"Designed during the Design Thinking 2, Oneservice in Figma represents an enhanced iteration of an existing application. This project focuses on refining user interactions and interface elements to improve usability and functionality.",
-    tags: [
-      {
-        name: "Figma",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "UI/UX",
-        color: "green-text-gradient",
-      },
-    ],
+    icons: [figma],
     image: OneService,
     source_code_link: "https://www.figma.com/design/qRGrOdMYwjLsXRWEqTva4d/DT-2?node-id=270-254&t=RNS6DrBxAKsL5zNf-1",
   },
   {
     name: "MyanService (Figma)",
     description:"A community well-being app prototype, designed during Design Sprint 2. It features enhanced user interactions and interface elements with actionable frames and components, showcasing expertise in prototyping and UI/UX design principles.",
-    tags: [
-      {
-        name: "Figma",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "UI/UX",
-        color: "green-text-gradient",
-      },
-    ],
+    icons: [figma],
     image: MyanService,
     source_code_link: "https://www.figma.com/design/9JNdLMov4X3QmPJeWqIsRO/Design-Sprint-SP53-GP-J?node-id=1-2&t=xhw0QExLYoN4PLZh-1",
   },
@@ -341,18 +267,17 @@ const projects = [
     name: "Techies (2021)",
     description:
       "A Simple landing webiste for Techies Learning & Training Center where students can login and enroll the courses but this platfrom cannot be used as learning portal for students. This site is developed using React and pure CSS",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-    ],
+    icons: [reactjs, css, html],
     image: Techies,
     source_code_link: "https://github.com/arkar1022/Techies",
+  },
+  {
+    name: "Modern Portfolio",
+    description:
+      "A sleek and professional portfolio website showcasing skills and works. This site features a modern and visually appealing design, featuring a modern design developed using Next.js, AceternityUI components, and Tailwind CSS for a highly responsive.",
+    icons: [nextjs, tailwind, html, ace, threejs ],
+    image: Portfolio,
+    source_code_link: "https://github.com/arkar1022/portfolio-acenternity-ui",
   },
 ];
 

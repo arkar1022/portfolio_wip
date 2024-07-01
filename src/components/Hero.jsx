@@ -21,10 +21,7 @@ const Hero = () => {
       <div
         className={`inset-0 flex-1  max-w-7xl  ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#000080]' />
-          <div className='w-1 h-40 blue-gradient' />
-        </div>
+      
 
         <div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>

@@ -19,11 +19,24 @@ import Cplus from "./tech/Cplus.png";
 import python from "./tech/python.png"
 import java from "./tech/java.png"
 import tensorflow from "./tech/tensorflow.png"
+import firebase from "./tech/firebase.png"
+import threejs from "./tech/threejs.png"
+
+import django from "./tech/django.png";
+import mysql from "./tech/mysql.svg";
+import restapi from './tech/restapi.png';
+import nginx from "./tech/nginx.png"
+import vultr from "./tech/vultr.svg"
+import chakra from "./tech/chakra.png"
+import android from "./tech/android.png"
+import ace from './tech/Ace.png'
 
 import JCUS from "./company/JCUS.webp";
 import Knoectify from "./company/Konectify.jpg"
 import YIUSAT from "./company/YIUSAT.jpg"
 import JCUSCom from "./company/JCUS_Com.jpg"
+import Portfolio from "./project/portfolio.png"
+
 
 import connectJCU from "./project/connectJCU.png"
 import connectJCUBackend from "./project/connectJCUBackend.png"
@@ -40,11 +53,21 @@ import Cert2 from "./certificate/Cert2.jpeg"
 import Cert3 from "./certificate/Cert3.png"
 import Cert4 from "./certificate/Cert4.png"
 import Cert5 from "./certificate/Cert5.png"
-
 import Robot from "./robot.gif"
 
 
 export {
+  threejs,
+  Portfolio,
+  ace,
+  django,
+  chakra,
+  restapi,
+  mysql,
+  nginx,
+  vultr,
+  android,
+  firebase,
   Cert1,
   Cert2,
   Cert3,

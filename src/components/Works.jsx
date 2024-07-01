@@ -18,13 +18,13 @@ const ProjectCard = ({
   index,
   name,
   description,
-  tags,
+  icons,
   image,
   source_code_link,
 }) => {
   return (
     <>
-      <motion.div onClick={() => window.open(source_code_link, "_blank")}>
+      <motion.div variants={fadeIn("right", "spring", index * 0.3, 0.75)} onClick={() => window.open(source_code_link, "_blank")}>
         <Tilt
           options={{
             max: 45,
@@ -33,7 +33,7 @@ const ProjectCard = ({
           }}
           className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:cursor-pointer'
         >
-          <div  className='relative w-full h-[230px]'>
+          <div className='relative w-full h-[230px]'>
             <img
               src={image}
               alt='project_image'
@@ -58,14 +58,11 @@ const ProjectCard = ({
             <h3 className='text-white font-bold font-poppins text-[24px]'>{name}</h3>
             <p className='mt-2 font-work-sans text-secondary text-[14px]'>{description}</p>
           </div>
-          <div className='mt-4 flex flex-wrap gap-2'>
-            {tags.map((tag) => (
-              <p
-                key={`${name}-${tag.name}`}
-                className={`font-pixelify  text-[14px] ${tag.color}`}
-              >
-                #{tag.name}
-              </p>
+          <div className="flex mt-2 items-center">
+            {icons.map((icon, idx) => (
+              <div key={idx} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{ transform: `translateX(-${5 * idx * 2}px)` }}>
+                <img src={icon} alt={icon} className="p-2" />
+              </div>
             ))}
           </div>
         </Tilt>
@@ -78,19 +75,23 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>MY  ACCOMPLISHMENTS</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      {/* <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 mb-[20px] font-work-sans text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
          The following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos where available. These projects reflect my ability to solve complex problems, work with different technologies, and manage projects effectively. Some projects were completed during my school days, while others were undertaken in my remote jobs. Although the code from my remote jobs cannot be shared publicly, please feel free to contact me for further insights or discussions about these projects.
         </motion.p>
+      </div> */}
+      <div className="mt-20 hidden md:flex flex-wrap justify-center items-center gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
       </div>
-      <div>
+      <div className="block md:hidden">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
