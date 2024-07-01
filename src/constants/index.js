@@ -274,7 +274,7 @@ const projects = [
   {
     name: "Modern Portfolio",
     description:
-      "A sleek and professional portfolio website showcasing skills and works. This site features a modern and visually appealing design, featuring a modern design developed using Next.js, AceternityUI components, and Tailwind CSS for a highly responsive.",
+      "A sleek and professional portfolio website showcasing skills and works with eye-catching visuals. This site features a modern and visually appealing design, using Next.js, AceternityUI components, and Tailwind CSS and provding better User Expereince.",
     icons: [nextjs, tailwind, html, ace, threejs ],
     image: Portfolio,
     source_code_link: "https://github.com/arkar1022/portfolio-acenternity-ui",
