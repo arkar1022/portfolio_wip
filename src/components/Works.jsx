@@ -74,19 +74,19 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div className="mb-20" variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
       {/* <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 mb-[20px] font-work-sans text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3  font-work-sans text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
          The following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos where available. These projects reflect my ability to solve complex problems, work with different technologies, and manage projects effectively. Some projects were completed during my school days, while others were undertaken in my remote jobs. Although the code from my remote jobs cannot be shared publicly, please feel free to contact me for further insights or discussions about these projects.
         </motion.p>
       </div> */}
-      <div className="mt-20 hidden md:flex flex-wrap justify-center items-center gap-7">
+      <div className="hidden md:flex flex-wrap justify-center items-center gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
