@@ -212,12 +212,12 @@ const projects = [
     source_code_link: "https://github.com/arkar1022/connectjcu-client",
   },
   {
-    name: "ConnectJCU (Backend)",
+    name: "Modern Portfolio",
     description:
-      "Backend API of ConnectJCU implemented with Django Rest Framework, utilizing AuthToken for secure token-based authentication. Containerized with Docker and served with Nginx for efficient traffic management and enhanced performance.",
-    icons: [python, docker, django, nginx, restapi, mysql, vultr],
-    image: connectJCUBackend,
-    source_code_link: "https://github.com/arkar1022/connectjcu-server",
+      "A sleek and professional portfolio website showcasing skills and works with eye-catching visuals. This site features a modern and visually appealing design, using Next.js, AceternityUI components, and Tailwind CSS and provding better User Expereince.",
+    icons: [nextjs, tailwind, html, ace, threejs ],
+    image: Portfolio,
+    source_code_link: "https://github.com/arkar1022/portfolio-acenternity-ui",
   },
   {
     name: "Brain Sharp",
@@ -234,13 +234,6 @@ const projects = [
     icons: [java,firebase, android],
     image: NoteApp,
     source_code_link: "https://github.com/arkar1022/MemoPad-Note-APP",
-  },
-  {
-    name: "Employee Management",
-    description: "Console Employee Management System, developed using C++, allows users to log in as either an employee or a manager. Loading and releasing employee data from files, searching for employees, and managing employee can be done.",
-    icons: [Cplus],
-    image: Employee,
-    source_code_link: "https://github.com/arkar1022/employee-management-system",
   },
   {
     name: "Sentor HUB (Figma)",
@@ -264,20 +257,27 @@ const projects = [
     source_code_link: "https://www.figma.com/design/9JNdLMov4X3QmPJeWqIsRO/Design-Sprint-SP53-GP-J?node-id=1-2&t=xhw0QExLYoN4PLZh-1",
   },
   {
+    name: "Employee Management",
+    description: "Console Employee Management System, developed using C++, allows users to log in as either an employee or a manager. Loading and releasing employee data from files, searching for employees, and managing employee can be done.",
+    icons: [Cplus],
+    image: Employee,
+    source_code_link: "https://github.com/arkar1022/employee-management-system",
+  },
+  {
+    name: "ConnectJCU (Backend)",
+    description:
+      "Backend API of ConnectJCU implemented with Django Rest Framework, utilizing AuthToken for secure token-based authentication. Containerized with Docker and served with Nginx for efficient traffic management and enhanced performance.",
+    icons: [python, docker, django, nginx, restapi, mysql, vultr],
+    image: connectJCUBackend,
+    source_code_link: "https://github.com/arkar1022/connectjcu-server",
+  },
+  {
     name: "Techies (2021)",
     description:
       "A Simple landing webiste for Techies Learning & Training Center where students can login and enroll the courses but this platfrom cannot be used as learning portal for students. This site is developed using React and pure CSS",
     icons: [reactjs, css, html],
     image: Techies,
     source_code_link: "https://github.com/arkar1022/Techies",
-  },
-  {
-    name: "Modern Portfolio",
-    description:
-      "A sleek and professional portfolio website showcasing skills and works with eye-catching visuals. This site features a modern and visually appealing design, using Next.js, AceternityUI components, and Tailwind CSS and provding better User Expereince.",
-    icons: [nextjs, tailwind, html, ace, threejs ],
-    image: Portfolio,
-    source_code_link: "https://github.com/arkar1022/portfolio-acenternity-ui",
   },
 ];
 
