@@ -42,7 +42,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 font-work-sans text-secondary text-[17px] md:text-[20px] max-w-4xl leading-[30px]'
       >
-        I am a graduating student from JCUS with a strong passion for Web Development and Artificial Intelligence.
+        I am a graduate student from James Cook University with a strong passion for Web Development and AI.
         Over the past two years, I have gained extensive experience in frontend development,
         specializing in React.js and Next.js, and have worked with
         Django for backend development. Currently, I am expanding
