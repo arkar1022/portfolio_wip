@@ -43,6 +43,14 @@ import {
   ace,
   Portfolio,
   threejs,
+  TeamPulse,
+  Cert7,
+  Cert6,
+  Cert8,
+  Cert9,
+  Cert10,
+  Cert11,
+  Cert12,
 } from "../assets";
 
 export const navLinks = [
@@ -66,6 +74,26 @@ const certificates = [
     image: Cert5
   },
   {
+    name: "React Meta",
+    image: Cert7
+  },
+  {
+    name: "DevOps Essentials",
+    image: Cert1
+  },
+  {
+    name: "Google AI",
+    image: Cert6
+  },
+  {
+    name: "Book Prize Award",
+    image: Cert10
+  },
+  {
+    name: "Design Sprint Prize",
+    image: Cert11
+  },
+  {
     name: "Intermediate Python for Data Science",
     image: Cert3
   },
@@ -74,13 +102,21 @@ const certificates = [
     image: Cert4
   },
   {
-    name: "DevOps Essentials",
-    image: Cert1
+    name: "AWS Lamddas",
+    image: Cert8
+  },
+  {
+    name: "AWS Essential",
+    image: Cert9
   },
   {
     name: "Penetrating Testing Essential",
     image: Cert2
   },
+  {
+    name: "SAP",
+    image: Cert12
+  }
 ]
 
 const technologies = [
@@ -255,6 +291,13 @@ const projects = [
     icons: [figma],
     image: MyanService,
     source_code_link: "https://www.figma.com/design/9JNdLMov4X3QmPJeWqIsRO/Design-Sprint-SP53-GP-J?node-id=1-2&t=xhw0QExLYoN4PLZh-1",
+  },
+  {
+    name: "TeamPulse (Figma)",
+    description:"A cross-cultural collaboration app prototype, designed during Design Sprint 3. It features enhanced user interactions and interface elements with actionable frames and components, showcasing expertise in Design Thinking and Creativity",
+    icons: [figma],
+    image: TeamPulse,
+    source_code_link: "https://www.figma.com/design/SwmxdlqGMJzqM2sWI3jn96/GP12?node-id=1-2&t=r5rsCeX1XWNYGf4y-1",
   },
   {
     name: "Employee Management",

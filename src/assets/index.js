@@ -47,18 +47,27 @@ import Employee from "./project/Employee.png"
 import Sentorhub from "./project/Sentorhub.png"
 import OneService from "./project/Oneservice.png"
 import MyanService from "./project/Myanservice.png"
+import TeamPulse from "./project/TeamPulse.png"
 
 import Cert1 from "./certificate/Cert1.png"
 import Cert2 from "./certificate/Cert2.jpeg"
 import Cert3 from "./certificate/Cert3.png"
 import Cert4 from "./certificate/Cert4.png"
 import Cert5 from "./certificate/Cert5.png"
+import Cert6 from "./certificate/Cert6.png"
+import Cert7 from "./certificate/Cert7.png"
+import Cert8 from "./certificate/Cert8.png"
+import Cert9 from "./certificate/Cert9.png"
+import Cert10 from "./certificate/Cert10.png"
+import Cert11 from "./certificate/Cert11.png"
+import Cert12 from "./certificate/Cert12.png"
 import Robot from "./robot.gif"
 
 
 export {
   threejs,
   Portfolio,
+  TeamPulse,
   ace,
   django,
   chakra,
@@ -73,6 +82,13 @@ export {
   Cert3,
   Cert4,
   Cert5,
+  Cert6,
+  Cert7,
+  Cert8,
+  Cert9,
+  Cert10,
+  Cert11,
+  Cert12,
   Robot,
   MyanService,
   OneService,
